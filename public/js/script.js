@@ -72,7 +72,56 @@ const bottle1 = {
   
   
   
-  
-  
+  // Functions
+// Defining a function
+function login(username, password) {
+  // Validate the username and password
+  if (!username || !password){
+    return 'Username or password not previded';
+  }
+  // verify username and password
+if (username == 'delah' && password == '1234') {
+    return 'User is logged in';
+} else{
+  return 'invalid username or password';
+}
+}
+
+//usage of != - not equal 
+// if (username != 'delah' && password != '1234') {
+    // return 'invalid username or password';
+// } else{
+    // return 'User is logged in';
+// }
+// }
+
+
+
+// Invoking a function
+login('delah', '1234');
+
+
+//Basic arithmentic Operations
+11 + 12;
+43 - 12;
+1 + 0.5;
+67 / 8;
+2786 / 52;
+5 * 3;
+14 % 3;
+
+
+Math.round(18 / 5);
+Math.floor(45/24);
+45 % 5
+Math.random() * 1000;
+Math.max (1.5, 2.5, 8.5, -85, 105);
+Math.max(26,94,100,0.2,56,86,85,54);
+//PEMDAS / BODAMS
+2 * (3 + 4) - 5 / 2;
+
+'2' - '2'
+'2'*'2'
+Number('2') +'2'
   
 
