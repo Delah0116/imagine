@@ -125,3 +125,13 @@ Math.max(26,94,100,0.2,56,86,85,54);
 Number('2') +'2'
   
 
+// Strings in JavaScript
+// Concatenation
+const firstname = 'Adeline';
+const lastname = 'Ackun';
+const middlename = '';
+firstname + ' ' + lastname;
+firstname + ' ' + middlename + ' ' + lastname;
+
+// Template literal
+`${firstname} ${middlename} ${lastname}`;
