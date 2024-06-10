@@ -135,3 +135,47 @@ firstname + ' ' + middlename + ' ' + lastname;
 
 // Template literal
 `${firstname} ${middlename} ${lastname}`;
+
+
+// Write a function that will add a participant to our Google classroom
+
+
+
+// addParticipant();
+ 
+const participants = [];
+function addParticipant(email) {
+  // check if email was provided
+  if (email === undefined || email == null) {
+    return "no email provided";
+  }
+//    or
+//    if(!email){
+//   return"no email prvided";
+// }
+// add participants
+participants.push(email);
+return "Participant added"
+}
+
+addParticipant("adelineackun@gmail.com");
+addParticipant("adelineackun@gmail.com");
+addParticipant();
+("adjoaackun@gmail.com");
+participants;
+
+// Arrays in Javascript
+const user = [
+{
+  username: "adelineackun",
+  password:"5454",
+  email: "adelineackun@gmail.com"
+},
+
+{
+  username: "missyros",
+  password:"1534",
+  email: "missyros@gmail.com"
+}
+];
+
