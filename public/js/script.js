@@ -165,17 +165,63 @@ addParticipant();
 participants;
 
 // Arrays in Javascript
-const user = [
-{
-  username: "adelineackun",
-  password:"5454",
-  email: "adelineackun@gmail.com"
-},
+// const user = [
+// {
+//   username: "adelineackun",
+//   password:"5454",
+//   email: "adelineackun@gmail.com"
+// },
 
-{
-  username: "missyros",
-  password:"1534",
-  email: "missyros@gmail.com"
+// {
+//   username: "missyros",
+//   password:"1534",
+//   email: "missyros@gmail.com"
+// }
+// ];
+
+ // WRITE A FUNCTION THAT WILL TAKE A USER WITH FIRSTNAME, LASTNAME AND RETURN fullname
+
+function fullName (user){
+  return{
+    ...user,
+    fullName: user.firstname + ' ' + user.lastname
+  };
 }
-];
+const user = {
+  firstname: "Adeline",
+  lastname: "Ackun"
+}
+fullName(user);
+
+// array map
+
+const users=[
+  {firstname: "Adeline", lastname: "Ackun"},
+   {firstname: "Pink", lastname: "Char"},
+   {firstname: "Hello", lastname: "Me"},
+   {firstname: "Missy", lastname: "Rose"},
+   {firstname: "Delah", lastname: "Mensah"},
+]
+
+users.map(fullName);
+
+// Square of numbers
+function square(number) {
+  return number ** 2;
+}
+
+square(15);
+const numbers = [9, 8, 7, 6];
+numbers.map(square)
+
+// Array filter
+
+function isEven(number) {
+  return number % 2 === 0;  
+}
+
+isEven(2);
+
+numbers.filter(isEven);
+
 
