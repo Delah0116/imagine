@@ -228,7 +228,7 @@ numbers.filter(isEven);
 
 // Write a function that will allow a user to reset their password
 const user = {
-  email: 'ruth.agbozo.93@gmail.com',
+  email: 'adelineackun@gmail.com',
   password: '1234'
 }
 
@@ -248,7 +248,7 @@ function resetPassword(email, newPassword) {
   }
   }
   user;
-  resetPassword("ruth.agbozo.93@gmail.com", "2202");
+  resetPassword("adelineackun@gmail.com", "2202");
   user;
 
 
