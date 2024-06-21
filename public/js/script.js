@@ -226,19 +226,46 @@ numbers.filter(isEven);
 
 
 
+// Write a function that will allow a user to reset their password
+const user = {
+  email: 'ruth.agbozo.93@gmail.com',
+  password: '1234'
+}
+
+function resetPassword(email, newPassword) {
+  // Check if email and new password was provided
+  if (!email || !newPassword) {
+    return "Email or password not provided";
+  }
+  // Check if provided email is correct
+  if (email === user.email){
+  // Update password with new one
+  user.password = newPassword;
+  return "Password reset successful";
+  }
+  if (email !== user.email) {
+    return "Invalid email";
+  }
+  }
+  user;
+  resetPassword("ruth.agbozo.93@gmail.com", "2202");
+  user;
+
+
+
 
 
 
 // You have been given an array of students with some of them marked as absent and others marked as present.
 // Write a function that returns the total number of students present
 
-const students = [
-  {id: 1, present: true},
-  {id: 2, present: false},
-  {id: 3, present: false},
-  {id: 4, present: true},  
-  {id: 5, present: false},
-]
+// const students = [
+//   {id: 1, present: true},
+//   {id: 2, present: false},
+//   {id: 3, present: false},
+//   {id: 4, present: true},  
+//   {id: 5, present: false},
+// ]
 
 // function attendance {
 //   if
@@ -249,32 +276,32 @@ const students = [
 // }
 
 
-function studentsPresent(students){
-  // Define a variable to track the present
-  let total = 0;
-  // Begin a loop
-  for (let i = 0; i < students.length; i++) {
-    // for any iteration if student then increase total present by 1;
+// function studentsPresent(students){
+//   // Define a variable to track the present
+//   let total = 0;
+//   // Begin a loop
+//   for (let i = 0; i < students.length; i++) {
+//     // for any iteration if student then increase total present by 1;
     
-    if (students[i].present === true){
-      total++;
-    }
-  }
-  // return the total present
-  return total;
-}
+//     if (students[i].present === true){
+//       total++;
+//     }
+//   }
+//   // return the total present
+//   return total;
+// }
 
-studentsPresent(students);
+// studentsPresent(students);
 
-// classes in javascript
-class Laptop {
-  constructor(brand, color) {
-    this.brand = brand;
-    this.color = color;
-  }
-}
+// // classes in javascript
+// class Laptop {
+//   constructor(brand, color) {
+//     this.brand = brand;
+//     this.color = color;
+//   }
+// }
 
-const laptop1 = new Laptop('Dell', 'black');
-const laptop2 = new Laptop('HP', 'silver');
-laptop1.brand;
-laptop2.brand;
+// const laptop1 = new Laptop('Dell', 'black');
+// const laptop2 = new Laptop('HP', 'silver');
+// laptop1.brand;
+// laptop2.brand;
